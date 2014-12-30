@@ -4,6 +4,21 @@
 	padding-right: 35px; 
 }
 
+.custom-header{
+	margin-bottom: 30px;
+	margin-top: 6px;
+}
+
+.nav-pills > li {
+	background-color: #c9c9cc;
+	margin-right: 3px;
+}
+
+.nav-pills > li > a {
+	color: #8c8d90;
+}
+
+
 
 .contenthover { padding:20px 20px 10px 20px; }
 .contenthover, .contenthover h3, contenthover a { color:#fff; }
