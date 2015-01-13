@@ -18,6 +18,14 @@
 	color: #8c8d90;
 }
 
+.mosaic-row-space {
+  font-family: Verdana , Helvetica, Arial, sans-serif;
+  font-size: 5px;
+  line-height: 1.1;
+  color: #FFF;
+  background-color: #fff;
+}
+
 
 .contenthover { padding:20px 20px 10px 20px; }
 .contenthover, .contenthover h3, contenthover a { color:#fff; }
