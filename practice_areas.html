@@ -2,6 +2,51 @@
 <html lang="en">
 <head>
   <title>Canales Auty</title>
+  <style>
+    .overlay-marker-sonora {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 105px;   /* chartArea top */
+       left: 150px; /* chartArea left */
+      }
+  .overlay-marker-oaxaca {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 385px;   /* chartArea top */
+       left: 410px; /* chartArea left */
+      }
+  .overlay-marker-slp {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 235px;   /* chartArea top */
+       left: 370px; /* chartArea left */
+      }
+  .overlay-marker-yucatan {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 260px;   /* chartArea top */
+       left: 550px; /* chartArea left */
+      }
+  .overlay-marker-durango {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 150px;   /* chartArea top */
+       left: 280px; /* chartArea left */
+      }
+  .overlay-marker-bcs {
+       width: 50px;
+       height: 50px;
+       position: absolute;
+       top: 190px;   /* chartArea top */
+       left: 120px; /* chartArea left */
+       
+      }
+  </style>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,12 +62,12 @@
     // se crea un arreglo, donde se indica que la primera linea como se va a particionar el mapa, nombre del estado y tamaño de la población.
         var data = google.visualization.arrayToDataTable([
           ['States','Estado','Energia Renovable (Kw)'],   
-          ['MX-SON','Sonora ',2856713],
-          ['MX-OAX','Oaxaca',3962574],        
-          ['MX-SLP','San Luis Potosi',2705525],
-          ['MX-YUC','Yucatan',2067619],
-          ['MX-DUR','Durango',1730805],
-          ['MX-BCS','Baja California Sur',721106],
+          ['MX-SON','Sonora ',100],
+          ['MX-OAX','Oaxaca',100],        
+          ['MX-SLP','San Luis Potosi',100],
+          ['MX-YUC','Yucatan',100],
+          ['MX-DUR','Durango',100],
+          ['MX-BCS','Baja California Sur',100],
         ]);
 
     var options = 
@@ -35,12 +80,15 @@
         //displayMode: 'markers',
         // color minimo: 'LightYellow' y color maximo: 'Salmon', igual se pueden utilizar los valor rgb.
         //colorAxis: {colors: ['LightGreen', 'Green'] }
-        color: 'Green'
+        colors: ['#8c8d90']
     };
     //se instacia y se dibuja el grafico
     var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
     chart.draw(data, options);
     };
+
+
+    
   </script>
 
 </head>
@@ -87,6 +135,29 @@
       <div class="col-md-7">
         <!--Mapa-->
         <div id="chart_div" style="width: 650px; height: 500px;"></div>
+
+        <div class="overlay-marker-sonora">
+          <img src="img/map-icon-solar.png" height="52">
+        </div>
+
+        <div class="overlay-marker-oaxaca">
+          <img src="img/map-icon-petroleo.png" height="52">
+        </div>
+
+        <div class="overlay-marker-slp">
+          <img src="img/map-icon-contenedor.png" height="52">
+        </div>
+
+        <div class="overlay-marker-yucatan">
+          <img src="img/map-icon-solar.png" height="52">
+        </div>
+
+        <div class="overlay-marker-durango">
+          <img src="img/map-icon-agua.png" height="52">
+        </div>     
+        <div class="overlay-marker-bcs">
+          <img src="img/map-icon-eolic.png" height="52">
+        </div>  
       </div>
       <div class="col-md-3">
         <h4>OTHER PROJECTS</h4>
