@@ -10,43 +10,44 @@
        top: 105px;   /* chartArea top */
        left: 150px; /* chartArea left */
       }
-  .overlay-marker-oaxaca {
-       width: 50px;
-       height: 50px;
-       position: absolute;
-       top: 385px;   /* chartArea top */
-       left: 410px; /* chartArea left */
-      }
-  .overlay-marker-slp {
-       width: 50px;
-       height: 50px;
-       position: absolute;
-       top: 235px;   /* chartArea top */
-       left: 370px; /* chartArea left */
-      }
-  .overlay-marker-yucatan {
-       width: 50px;
-       height: 50px;
-       position: absolute;
-       top: 260px;   /* chartArea top */
-       left: 550px; /* chartArea left */
-      }
-  .overlay-marker-durango {
-       width: 50px;
-       height: 50px;
-       position: absolute;
-       top: 150px;   /* chartArea top */
-       left: 280px; /* chartArea left */
-      }
-  .overlay-marker-bcs {
-       width: 50px;
-       height: 50px;
-       position: absolute;
-       top: 190px;   /* chartArea top */
-       left: 120px; /* chartArea left */
+    .overlay-marker-oaxaca {
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         top: 385px;   /* chartArea top */
+         left: 410px; /* chartArea left */
+        }
+    .overlay-marker-slp {
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         top: 235px;   /* chartArea top */
+         left: 370px; /* chartArea left */
+        }
+    .overlay-marker-yucatan {
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         top: 260px;   /* chartArea top */
+         left: 550px; /* chartArea left */
+        }
+    .overlay-marker-durango {
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         top: 150px;   /* chartArea top */
+         left: 280px; /* chartArea left */
+        }
+    .overlay-marker-bcs {
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         top: 190px;   /* chartArea top */
+         left: 120px; /* chartArea left */
        
       }
   </style>
+
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -85,29 +86,27 @@
     //se instacia y se dibuja el grafico
     var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
     chart.draw(data, options);
-    };
-
-
-    
+    };   
   </script>
-
 </head>
 
 <body>
   <div class="container">
     <!-- #Header -->
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10"><a href="index.html"><img src="img/header.png"></a></div>
-      <div class="col-md-1"></div>
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <div class="header-img"><a href="index.html"><img src="img/header_transparent.png"></a></div>
+        <div class="sexy_line"></div>
+      </div>
+      <div class="col-xs-1"></div>
     </div>
     
-
     <!--Navbar-->
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="container custom-header">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <div class="custom-header">
           <ul class="nav nav-pills h3">
             <li role="presentation" class"active"><a href="about.html">ABOUT THE FIRM</a></li>
             <li role="presentation" class="dropdown">
@@ -115,8 +114,8 @@
               PROFESSIONALS <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li role="presentation"><a href="professionals.html">CARLOS CANALES</a></li>
-                <li role="presentation"><a href="professionals.html">AUTY</a></li>
+                <li role="presentation"><a href="professionals.html" class="h3">CARLOS CANALES</a></li>
+                <li role="presentation"><a href="professionals.html" class="h3">AUTY</a></li>
               </ul>
             </li>
             <li role="presentation"><a href="practice_areas.html">PRACTICE AREAS</a></li>
@@ -126,13 +125,13 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-xs-1"></div>
     </div>
 
     <!--Body -->
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-7">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-7">
         <!--Mapa-->
         <div id="chart_div" style="width: 650px; height: 500px;"></div>
 
@@ -159,17 +158,21 @@
           <img src="img/map-icon-eolic.png" height="52">
         </div>  
       </div>
-      <div class="col-md-3">
-        <h4>OTHER PROJECTS</h4>
-        <ul>
-          <li>Venezuela</li>
-          <li>Botswana</li>
-          <li>Costa Rica</li>
-          <li>Londres</li>
-          <li>Uruguay</li>
-        </ul>
+      <div class="col-xs-2 other-projects">
+        <div class="page-header">
+          <h5>OTHER PROJECTS</h5>
+        </div>
+        <div class="map-other-projects">
+          <p><small>Venezuela</small></p>
+          <p><small>Botswana</small></p>
+          <p><small>Costa Rica</small></p>
+          <p><small>Londres</small></p>
+          <p><small>Uruguay</small></p>
+        </div>
+        <div class="page-header">
+        </div>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-xs-1"></div>
     </div>
   </div>
 
@@ -178,25 +181,20 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-          <a href="http://www.facebook.com"><img src="img/fb.png"></a>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-5">
+          <a href="http://www.twitter.com"><img src="img/follow_us.png"></a>
+          <a href="http://www.twitter.com"><img src="img/fb.png"></a>
           <a href="http://www.twitter.com"><img src="img/tw.png"></a>
           <a href="http://www.linkdn.com"><img src="img/lkdn.png"></a>
-          <a href="http://www.google-plus.com"><img src="img/gplus.png"></a>
-          <a href="http://wwww.facebook.com"><img src="img/fb_likes.png"></a>
         </div>
-        <div class="col-md-6 h6 text-right">
-          CODE OF CONDUCT     
-          <img src="img/english.png">
-          <img src="img/spanish.png">
-          CREDITS & DISCLAIMER
-        </div>
-        <div class="col-md-1"></div>
+        <div class="col-xs-5 text-right"><img src="img/footer_right.png"></div>
+        <div class="col-xs-1"></div>
       </div>
     </div>
   </footer>
-  <script src="//code.jquery.com/jquery.js"></script>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
 </body>
 </html>
