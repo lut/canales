@@ -26,15 +26,6 @@
 	margin-top: 6px;
 }
 
-.nav-pills > li {
-	background-color: #c9c9cc;
-	margin-right: 3px;
-}
-
-.nav-pills > li > a {
-	color: #8c8d90;
-}
-
 .mosaic-row-space {
   font-family: Verdana , Helvetica, Arial, sans-serif;
   font-size: 5px;
@@ -58,26 +49,33 @@
 }
 
 
-.contenthover { padding:20px 20px 10px 20px; }
-.contenthover, .contenthover h3, contenthover a { color:#fff; }
-.contenthover h3, .contenthover p { margin:0 0 10px 0; line-height:1.4em; padding:0; }
-.contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
-.contenthover a.mybutton:hover { background:#34742d }
-
-
-
 .right.carousel-control, .left.carousel-control {
     display: none;
 }
 
 .about-text {
-  font-size: 14px;
   font-family: "Verdana";
   color: rgb(180, 182, 185);
   line-height: 1.25;
   text-align: justify;
   top: 241.434px;
   margin-right: 30px;
+}
+
+
+.panel-grey {
+  background-color: #c9c9cc;
+  color: #666666;
+}
+
+.our-team-contact {
+  font-family: "Verdana";
+  color: rgb(180, 182, 185);
+  line-height: 1.25;
+  text-align: right;
+
+  top: 241.434px;
+  margin-right: 60px;
 }
 
 .other-projects{
