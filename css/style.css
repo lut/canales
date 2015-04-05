@@ -15,6 +15,14 @@
   right: 0;
 }
 
+.page-header {
+  border-bottom: 1px solid #aeaeb4;
+}
+
+.page-header-our-team {
+  padding-bottom: 10px;
+}
+
 .largeIcon{
 	font-size: 50px;
 	padding-left: 35px;
@@ -55,17 +63,47 @@
 
 .about-text {
   font-family: "Verdana";
-  color: rgb(180, 182, 185);
   line-height: 1.25;
   text-align: justify;
   top: 241.434px;
   margin-right: 30px;
 }
 
+.contact-links{
+  color: rgb(180, 182, 185);
+}
+
+.contact-links-carlos{
+  color: rgb(180, 182, 185);
+  font-size: 12px;
+}
+
+.contact-links-contact-us{
+  color: #4e4e4e;
+}
+
 
 .panel-grey {
   background-color: #c9c9cc;
   color: #666666;
+  margin-left: -35px;
+  border-radius: 0px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.panel-grey-text{
+  font-size: 12px;
+}
+
+.panel-grey-auty {
+  padding: 15px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+.panel-out-team-central-column{
+  margin-left: -30px;
+  margin-right: -15px;
 }
 
 .our-team-contact {
@@ -78,9 +116,10 @@
   margin-right: 60px;
 }
 
-.other-projects{
-  margin-left: 80px;
+.our-team-view-profile {
+  margin-left: 50px;
 }
+
 
 .map-other-projects {
   text-align: right;
@@ -97,3 +136,157 @@
    left: 100px; 
    width: 100%;
 }
+
+/* Map Icon Overlay */
+.overlay-marker-sonora {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 67px;   /* chartArea top */
+   left: 155px; /* chartArea left */
+  }
+
+  .overlay-marker-ducto {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: -1px;   /* chartArea top */
+   left: 31px; /* chartArea left */
+  }
+
+  .overlay-marker-barco-bcn {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 63px;   /* chartArea top */
+   left: -3px; /* chartArea left */
+  }
+
+  .overlay-marker-tanque-bcn {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 73px;   /* chartArea top */
+   left: 65px; /* chartArea left */
+  }
+
+  .overlay-marker-minerales {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 124px;   /* chartArea top */
+   left: 337px; /* chartArea left */
+  }
+
+  .overlay-marker-transmision {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 192px;   /* chartArea top */
+   left: 275px; /* chartArea left */
+  }
+
+  .overlay-marker-reciclaje {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 177px;   /* chartArea top */
+   left: 374px; /* chartArea left */
+  }
+
+  .overlay-marker-geotermia {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 232px;   /* chartArea top */
+   left: 319px; /* chartArea left */
+  }
+
+  .overlay-marker-petroleo-tamaulipas {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 209px;   /* chartArea top */
+   left: 423px; /* chartArea left */
+  }
+
+  .overlay-marker-planta-electrica {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 252px;   /* chartArea top */
+   left: 371px; /* chartArea left */
+  }
+
+  .overlay-marker-tanque-gto {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 300px;   /* chartArea top */
+   left: 335px; /* chartArea left */
+  }
+
+  .overlay-marker-nuclear {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 292px;   /* chartArea top */
+   left: 445px; /* chartArea left */
+  }
+
+  .overlay-marker-barco-golfo {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 231px;   /* chartArea top */
+   left: 545px; /* chartArea left */
+  }
+
+  .overlay-marker-plataforma {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 283px;   /* chartArea top */
+   left: 517px; /* chartArea left */
+  }
+
+  .overlay-marker-petroleo-tuxpan {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 339px;   /* chartArea top */
+   left: 492px; /* chartArea left */
+  }
+
+  .overlay-marker-petroleo-campeche {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 314px;   /* chartArea top */
+   left: 588px; /* chartArea left */
+  }
+
+  .overlay-marker-viento {
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   top: 402px;   /* chartArea top */
+   left: 463px; /* chartArea left */
+  }
+
+  .overlay-carrousel {
+   width: 900;
+   height: 500;
+   z-index: 1500;
+   position: absolute;
+   top: 0px;   /* chartArea top */
+   left: 0px; /* chartArea left */
+  }
+
+  /* About Text */
+  .panel-about {
+  margin-left: -45px;
+}
+
+
+
