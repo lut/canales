@@ -125,6 +125,11 @@
   text-align: right;
 }
 
+.header-other-projects{
+  text-align: right;
+  margin-left: 35px;
+}
+
 .image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -252,6 +257,7 @@
 
   .overlay-marker-petroleo-tuxpan {
    width: 60px;
+
    height: 60px;
    position: absolute;
    top: 339px;   /* chartArea top */
@@ -276,7 +282,7 @@
 
   .overlay-carrousel {
    width: 900;
-   height: 500;
+   height: 437;
    z-index: 1500;
    position: absolute;
    top: 0px;   /* chartArea top */
